@@ -171,18 +171,16 @@ The investigation for DE-001 follows these steps:
 | Reason | Authorized validation command with no harmful action |
 | Evidence | Sysmon 1, PowerShell 4104, Security 4688, decoded payload |
 
-## Evidence to add
+## Evidence
 
-Add sanitized screenshots to a `screenshots/` directory and reference them here:
-
-- [ ] Lab architecture
-- [ ] Forwarder connection and active destination
-- [ ] Sysmon events received by Splunk
-- [ ] DE-001 search result
-- [ ] Triggered alert
-- [ ] Correlated 4104 and 4688 events
-- [ ] Decoded Base64 payload
-- [ ] Final investigation verdict
+- [x] [Lab architecture](screenshots/lab-setup/01-lab-architecture.png)
+- [x] [Forwarder connection and active destination](screenshots/lab-setup/02-forwarder-active.png)
+- [x] [Sysmon events received by Splunk](screenshots/lab-setup/03-sysmon-events.png)
+- [x] [DE-001 search result](screenshots/DE-001-encoded-powershell/04-de-001-search-result.png)
+- [x] [Triggered alert](screenshots/DE-001-encoded-powershell/05-de-001-triggered-alert.png)
+- [x] [Correlated Sysmon 1, PowerShell 4104, and Security 4688 events](screenshots/DE-001-encoded-powershell/06-event-correlation.png)
+- [x] [Decoded Base64 payload](screenshots/DE-001-encoded-powershell/07-decoded-payload.png)
+- [x] [Final investigation verdict](screenshots/DE-001-encoded-powershell/08-investigation-verdict.png)
 
 ## Skills demonstrated
 
@@ -221,6 +219,8 @@ soc-splunk-detection-lab/
 ├── detections/
 ├── investigations/
 └── screenshots/
+    ├── lab-setup/
+    └── DE-001-encoded-powershell/
 ```
 
 ## Project files

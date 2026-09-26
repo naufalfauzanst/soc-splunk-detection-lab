@@ -48,17 +48,20 @@ The command was launched manually as part of the lab validation. The decoded con
 - Preserved the event details for the portfolio.
 - Closed the case without endpoint containment.
 
-## Evidence still to add
+## Evidence
 
-- [ ] Alert timestamp
-- [ ] Exact event timestamps
+- [x] [Detection result](../screenshots/DE-001-encoded-powershell/04-de-001-search-result.png)
+- [x] [Triggered alert](../screenshots/DE-001-encoded-powershell/05-de-001-triggered-alert.png)
+- [x] [Correlated telemetry](../screenshots/DE-001-encoded-powershell/06-event-correlation.png)
+- [x] [Payload decoding](../screenshots/DE-001-encoded-powershell/07-decoded-payload.png)
+- [x] [Investigation verdict](../screenshots/DE-001-encoded-powershell/08-investigation-verdict.png)
+
+Fields to complete later:
+
+- [ ] Exact alert timestamp
 - [ ] Process GUID or process ID
 - [ ] Parent process path
 - [ ] SHA-256 hash
-- [ ] Detection result screenshot
-- [ ] Triggered alert screenshot
-- [ ] Correlation screenshot
-- [ ] Payload decoding screenshot
 
 ## Analyst notes
 

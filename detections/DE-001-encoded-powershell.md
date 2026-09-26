@@ -85,3 +85,10 @@ Write-Output "SOC_ALERT_VALIDATION_001"
 ## Validation result
 
 The rule detected the test command and triggered the scheduled alert. Correlated telemetry was available from Sysmon Event ID 1, PowerShell Event ID 4104, and Security Event ID 4688. The test was classified as a Benign Positive because the command only printed a validation string.
+
+## Evidence
+
+- [Detection search result](../screenshots/DE-001-encoded-powershell/04-de-001-search-result.png)
+- [Triggered alert](../screenshots/DE-001-encoded-powershell/05-de-001-triggered-alert.png)
+- [Event correlation](../screenshots/DE-001-encoded-powershell/06-event-correlation.png)
+- [Decoded payload](../screenshots/DE-001-encoded-powershell/07-decoded-payload.png)
