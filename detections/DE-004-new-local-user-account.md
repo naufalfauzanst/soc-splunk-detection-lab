@@ -93,3 +93,4 @@ The account was removed after the alert was validated.
 
 - [Detection search result](../screenshots/DE-004-new-local-user-account/16-de-004-search-result.png)
 - [Triggered alert](../screenshots/DE-004-new-local-user-account/17-de-004-triggered-alert.png)
+- [Investigation verdict](../screenshots/DE-004-new-local-user-account/18-de-004-investigation-verdict.png)

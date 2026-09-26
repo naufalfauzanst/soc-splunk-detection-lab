@@ -192,6 +192,7 @@ The investigation for DE-001 follows these steps:
 - [x] [DE-003 investigation verdict](screenshots/DE-003-bitsadmin-network-transfer/15-de-003-investigation-verdict.png)
 - [x] [DE-004 search result](screenshots/DE-004-new-local-user-account/16-de-004-search-result.png)
 - [x] [DE-004 triggered alert](screenshots/DE-004-new-local-user-account/17-de-004-triggered-alert.png)
+- [x] [DE-004 investigation verdict](screenshots/DE-004-new-local-user-account/18-de-004-investigation-verdict.png)
 
 ## Skills demonstrated
 
