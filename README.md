@@ -2,7 +2,7 @@
 
 Home SOC lab for collecting Windows telemetry, writing Splunk detections, validating alerts, and documenting investigation results.
 
-> **Project status:** In progress. The core log pipeline and the first detection are working.
+> **Project status:** In progress. The core log pipeline and four detections are working.
 
 ## Project overview
 
@@ -14,6 +14,7 @@ Current capabilities:
 - Forward events from a Windows virtual machine to Splunk over TCP port `9997`.
 - Search endpoint telemetry in the `windows_endpoint` index.
 - Detect encoded PowerShell execution.
+- Detect repeated failed Windows logons, suspicious BITSAdmin transfers, and local account creation.
 - Correlate Sysmon process creation, PowerShell Script Block Logging, and Windows Security events.
 - Create scheduled alerts and document investigation findings.
 
@@ -91,6 +92,7 @@ Do not publish passwords, tokens, license data, or other secrets from local conf
 | DE-001 | Encoded PowerShell Execution | T1059.001 | High | Implemented and validated |
 | DE-002 | Repeated Failed Windows Logons | T1110.001 | Medium | Implemented and validated |
 | DE-003 | Suspicious BITSAdmin Network Transfer | T1197 | Medium | Implemented and validated |
+| DE-004 | New Local User Account Created | T1136.001 | Medium | Implemented and validated |
 
 ## DE-001: Encoded PowerShell Execution
 
@@ -188,6 +190,8 @@ The investigation for DE-001 follows these steps:
 - [x] [DE-003 triggered alert](screenshots/DE-003-bitsadmin-network-transfer/13-de-003-triggered-alert.png)
 - [x] [DE-003 downloaded file and SHA-256](screenshots/DE-003-bitsadmin-network-transfer/14-de-003-downloaded-file-hash.png)
 - [x] [DE-003 investigation verdict](screenshots/DE-003-bitsadmin-network-transfer/15-de-003-investigation-verdict.png)
+- [x] [DE-004 search result](screenshots/DE-004-new-local-user-account/16-de-004-search-result.png)
+- [x] [DE-004 triggered alert](screenshots/DE-004-new-local-user-account/17-de-004-triggered-alert.png)
 
 ## Skills demonstrated
 
@@ -213,6 +217,7 @@ The investigation for DE-001 follows these steps:
 - [ ] Export and document the complete forwarder configuration.
 - [x] Add repeated failed-logon detection.
 - [x] Add a suspicious LOLBin detection.
+- [x] Add a local account creation detection.
 - [ ] Add alert tuning notes and known false positives.
 - [ ] Add response recommendations for every detection.
 
@@ -229,7 +234,8 @@ soc-splunk-detection-lab/
     ├── lab-setup/
     ├── DE-001-encoded-powershell/
     ├── DE-002-repeated-failed-logons/
-    └── DE-003-bitsadmin-network-transfer/
+    ├── DE-003-bitsadmin-network-transfer/
+    └── DE-004-new-local-user-account/
 ```
 
 ## Project files
@@ -242,6 +248,8 @@ soc-splunk-detection-lab/
 - [IR-002 investigation report](investigations/IR-002-repeated-failed-logons.md)
 - [DE-003 detection documentation](detections/DE-003-bitsadmin-network-transfer.md)
 - [IR-003 investigation report](investigations/IR-003-bitsadmin-network-transfer.md)
+- [DE-004 detection documentation](detections/DE-004-new-local-user-account.md)
+- [IR-004 investigation report](investigations/IR-004-new-local-user-account.md)
 - [Screenshot naming and sanitization guide](screenshots/README.md)
 
 ## Disclaimer
