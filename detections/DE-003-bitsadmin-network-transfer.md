@@ -98,3 +98,4 @@ Direct interactive use of `bitsadmin.exe` is less common than application-manage
 - [Detection search result](../screenshots/DE-003-bitsadmin-network-transfer/12-de-003-search-result.png)
 - [Triggered alert](../screenshots/DE-003-bitsadmin-network-transfer/13-de-003-triggered-alert.png)
 - [Downloaded file and SHA-256](../screenshots/DE-003-bitsadmin-network-transfer/14-de-003-downloaded-file-hash.png)
+- [Investigation verdict](../screenshots/DE-003-bitsadmin-network-transfer/15-de-003-investigation-verdict.png)

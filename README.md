@@ -187,6 +187,7 @@ The investigation for DE-001 follows these steps:
 - [x] [DE-003 search result](screenshots/DE-003-bitsadmin-network-transfer/12-de-003-search-result.png)
 - [x] [DE-003 triggered alert](screenshots/DE-003-bitsadmin-network-transfer/13-de-003-triggered-alert.png)
 - [x] [DE-003 downloaded file and SHA-256](screenshots/DE-003-bitsadmin-network-transfer/14-de-003-downloaded-file-hash.png)
+- [x] [DE-003 investigation verdict](screenshots/DE-003-bitsadmin-network-transfer/15-de-003-investigation-verdict.png)
 
 ## Skills demonstrated
 

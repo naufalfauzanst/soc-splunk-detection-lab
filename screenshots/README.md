@@ -23,7 +23,8 @@ screenshots/
 └── DE-003-bitsadmin-network-transfer/
     ├── 12-de-003-search-result.png
     ├── 13-de-003-triggered-alert.png
-    └── 14-de-003-downloaded-file-hash.png
+    ├── 14-de-003-downloaded-file-hash.png
+    └── 15-de-003-investigation-verdict.png
 ```
 
 Each screenshot should show enough context to support a claim in the README. Crop unrelated browser tabs and desktop content.
@@ -53,3 +54,4 @@ Each screenshot should show enough context to support a claim in the README. Cro
 - [Detection search result](DE-003-bitsadmin-network-transfer/12-de-003-search-result.png)
 - [Triggered alert](DE-003-bitsadmin-network-transfer/13-de-003-triggered-alert.png)
 - [Downloaded file and SHA-256](DE-003-bitsadmin-network-transfer/14-de-003-downloaded-file-hash.png)
+- [Investigation verdict](DE-003-bitsadmin-network-transfer/15-de-003-investigation-verdict.png)
