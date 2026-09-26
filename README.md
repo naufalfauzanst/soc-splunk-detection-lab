@@ -89,7 +89,7 @@ Do not publish passwords, tokens, license data, or other secrets from local conf
 | ID | Detection | MITRE ATT&CK | Severity | Status |
 |---|---|---|---|---|
 | DE-001 | Encoded PowerShell Execution | T1059.001 | High | Implemented and validated |
-| DE-002 | Repeated Failed Windows Logons | T1110 | Medium | Planned |
+| DE-002 | Repeated Failed Windows Logons | T1110.001 | Medium | Implemented and validated |
 | DE-003 | Suspicious LOLBin Network Activity | T1218 | High | Planned |
 
 ## DE-001: Encoded PowerShell Execution
@@ -181,6 +181,8 @@ The investigation for DE-001 follows these steps:
 - [x] [Correlated Sysmon 1, PowerShell 4104, and Security 4688 events](screenshots/DE-001-encoded-powershell/06-event-correlation.png)
 - [x] [Decoded Base64 payload](screenshots/DE-001-encoded-powershell/07-decoded-payload.png)
 - [x] [Final investigation verdict](screenshots/DE-001-encoded-powershell/08-investigation-verdict.png)
+- [x] [DE-002 search result](screenshots/DE-002-repeated-failed-logons/09-de-002-search-result.png)
+- [x] [DE-002 triggered alert](screenshots/DE-002-repeated-failed-logons/10-de-002-triggered-alert.png)
 
 ## Skills demonstrated
 
@@ -202,9 +204,9 @@ The investigation for DE-001 follows these steps:
 - [x] Implement and validate encoded PowerShell detection.
 - [x] Create a scheduled Splunk alert.
 - [x] Document the first investigation and verdict.
-- [ ] Add sanitized screenshots and an architecture diagram.
+- [x] Add sanitized screenshots and an architecture diagram.
 - [ ] Export and document the complete forwarder configuration.
-- [ ] Add repeated failed-logon detection.
+- [x] Add repeated failed-logon detection.
 - [ ] Add a suspicious LOLBin detection.
 - [ ] Add alert tuning notes and known false positives.
 - [ ] Add response recommendations for every detection.
@@ -220,7 +222,8 @@ soc-splunk-detection-lab/
 ├── investigations/
 └── screenshots/
     ├── lab-setup/
-    └── DE-001-encoded-powershell/
+    ├── DE-001-encoded-powershell/
+    └── DE-002-repeated-failed-logons/
 ```
 
 ## Project files
@@ -229,6 +232,8 @@ soc-splunk-detection-lab/
 - [Sanitized Splunk configuration examples](configs/README.md)
 - [DE-001 detection documentation](detections/DE-001-encoded-powershell.md)
 - [IR-001 investigation report](investigations/IR-001-encoded-powershell.md)
+- [DE-002 detection documentation](detections/DE-002-repeated-failed-logons.md)
+- [IR-002 investigation report](investigations/IR-002-repeated-failed-logons.md)
 - [Screenshot naming and sanitization guide](screenshots/README.md)
 
 ## Disclaimer
