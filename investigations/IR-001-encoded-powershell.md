@@ -10,12 +10,25 @@
 | User | naufal |
 | Severity | High |
 | MITRE ATT&CK | T1059.001 PowerShell |
+| Event timestamp | 2026-09-26 02:00:22.271 |
+| Alert timestamp | 2026-09-26 02:05:01 SE Asia Standard Time |
 | Disposition | Benign Positive |
 | Status | Closed |
 
 ## Alert context
 
 The scheduled Splunk search detected `powershell.exe` with an encoded command argument on `SOC-ENDPOINT-01`. The event was generated during an authorized detection validation exercise.
+
+## Process details
+
+| Field | Value |
+|---|---|
+| Process image | `C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe` |
+| Parent process | `C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe` |
+| Process GUID | `{3f37587f-c4c6-6ab6-8312-000000000d00}` |
+| Process ID | `3832` |
+| SHA-256 | `8BB6FA8C283B4D92120B1EF249A9B311B0F804D4CABBE9981159976C8BE76A5E` |
+| Command option | `-NoProfile -EncodedCommand` |
 
 ## Evidence reviewed
 
@@ -56,13 +69,13 @@ The command was launched manually as part of the lab validation. The decoded con
 - [x] [Payload decoding](../screenshots/DE-001-encoded-powershell/07-decoded-payload.png)
 - [x] [Investigation verdict](../screenshots/DE-001-encoded-powershell/08-investigation-verdict.png)
 
-Fields to complete later:
+Case fields completed:
 
-- [ ] Exact alert timestamp
-- [ ] Process GUID or process ID
-- [ ] Parent process path
-- [ ] SHA-256 hash
+- [x] Exact event and alert timestamps
+- [x] Process GUID and Process ID
+- [x] Parent process path
+- [x] SHA-256 hash
 
 ## Analyst notes
 
-Add any additional observations, tuning decisions, and lessons learned here.
+The scheduled alert fired approximately four minutes and 39 seconds after the process event. The repeated events observed during analysis were duplicate indexed copies of the same Sysmon record, so the investigation used the Process GUID to identify the unique process execution.
