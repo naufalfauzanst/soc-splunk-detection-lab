@@ -90,7 +90,7 @@ Do not publish passwords, tokens, license data, or other secrets from local conf
 |---|---|---|---|---|
 | DE-001 | Encoded PowerShell Execution | T1059.001 | High | Implemented and validated |
 | DE-002 | Repeated Failed Windows Logons | T1110.001 | Medium | Implemented and validated |
-| DE-003 | Suspicious LOLBin Network Activity | T1218 | High | Planned |
+| DE-003 | Suspicious BITSAdmin Network Transfer | T1197 | Medium | Implemented and validated |
 
 ## DE-001: Encoded PowerShell Execution
 
@@ -184,6 +184,9 @@ The investigation for DE-001 follows these steps:
 - [x] [DE-002 search result](screenshots/DE-002-repeated-failed-logons/09-de-002-search-result.png)
 - [x] [DE-002 triggered alert](screenshots/DE-002-repeated-failed-logons/10-de-002-triggered-alert.png)
 - [x] [DE-002 investigation verdict](screenshots/DE-002-repeated-failed-logons/11-de-002-investigation-verdict.png)
+- [x] [DE-003 search result](screenshots/DE-003-bitsadmin-network-transfer/12-de-003-search-result.png)
+- [x] [DE-003 triggered alert](screenshots/DE-003-bitsadmin-network-transfer/13-de-003-triggered-alert.png)
+- [x] [DE-003 downloaded file and SHA-256](screenshots/DE-003-bitsadmin-network-transfer/14-de-003-downloaded-file-hash.png)
 
 ## Skills demonstrated
 
@@ -208,7 +211,7 @@ The investigation for DE-001 follows these steps:
 - [x] Add sanitized screenshots and an architecture diagram.
 - [ ] Export and document the complete forwarder configuration.
 - [x] Add repeated failed-logon detection.
-- [ ] Add a suspicious LOLBin detection.
+- [x] Add a suspicious LOLBin detection.
 - [ ] Add alert tuning notes and known false positives.
 - [ ] Add response recommendations for every detection.
 
@@ -224,7 +227,8 @@ soc-splunk-detection-lab/
 └── screenshots/
     ├── lab-setup/
     ├── DE-001-encoded-powershell/
-    └── DE-002-repeated-failed-logons/
+    ├── DE-002-repeated-failed-logons/
+    └── DE-003-bitsadmin-network-transfer/
 ```
 
 ## Project files
@@ -235,6 +239,8 @@ soc-splunk-detection-lab/
 - [IR-001 investigation report](investigations/IR-001-encoded-powershell.md)
 - [DE-002 detection documentation](detections/DE-002-repeated-failed-logons.md)
 - [IR-002 investigation report](investigations/IR-002-repeated-failed-logons.md)
+- [DE-003 detection documentation](detections/DE-003-bitsadmin-network-transfer.md)
+- [IR-003 investigation report](investigations/IR-003-bitsadmin-network-transfer.md)
 - [Screenshot naming and sanitization guide](screenshots/README.md)
 
 ## Disclaimer

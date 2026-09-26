@@ -16,10 +16,14 @@ screenshots/
     ├── 06-event-correlation.png
     ├── 07-decoded-payload.png
     └── 08-investigation-verdict.png
-└── DE-002-repeated-failed-logons/
+├── DE-002-repeated-failed-logons/
     ├── 09-de-002-search-result.png
     ├── 10-de-002-triggered-alert.png
     └── 11-de-002-investigation-verdict.png
+└── DE-003-bitsadmin-network-transfer/
+    ├── 12-de-003-search-result.png
+    ├── 13-de-003-triggered-alert.png
+    └── 14-de-003-downloaded-file-hash.png
 ```
 
 Each screenshot should show enough context to support a claim in the README. Crop unrelated browser tabs and desktop content.
@@ -43,3 +47,9 @@ Each screenshot should show enough context to support a claim in the README. Cro
 - [Detection search result](DE-002-repeated-failed-logons/09-de-002-search-result.png)
 - [Triggered alert](DE-002-repeated-failed-logons/10-de-002-triggered-alert.png)
 - [Investigation verdict](DE-002-repeated-failed-logons/11-de-002-investigation-verdict.png)
+
+## DE-003 evidence
+
+- [Detection search result](DE-003-bitsadmin-network-transfer/12-de-003-search-result.png)
+- [Triggered alert](DE-003-bitsadmin-network-transfer/13-de-003-triggered-alert.png)
+- [Downloaded file and SHA-256](DE-003-bitsadmin-network-transfer/14-de-003-downloaded-file-hash.png)
