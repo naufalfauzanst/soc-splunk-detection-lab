@@ -18,7 +18,8 @@ screenshots/
     └── 08-investigation-verdict.png
 └── DE-002-repeated-failed-logons/
     ├── 09-de-002-search-result.png
-    └── 10-de-002-triggered-alert.png
+    ├── 10-de-002-triggered-alert.png
+    └── 11-de-002-investigation-verdict.png
 ```
 
 Each screenshot should show enough context to support a claim in the README. Crop unrelated browser tabs and desktop content.
@@ -41,3 +42,4 @@ Each screenshot should show enough context to support a claim in the README. Cro
 
 - [Detection search result](DE-002-repeated-failed-logons/09-de-002-search-result.png)
 - [Triggered alert](DE-002-repeated-failed-logons/10-de-002-triggered-alert.png)
+- [Investigation verdict](DE-002-repeated-failed-logons/11-de-002-investigation-verdict.png)

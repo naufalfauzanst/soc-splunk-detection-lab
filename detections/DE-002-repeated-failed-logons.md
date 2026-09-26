@@ -100,3 +100,4 @@ The command was run five times with an intentionally incorrect password.
 
 - [Detection search result](../screenshots/DE-002-repeated-failed-logons/09-de-002-search-result.png)
 - [Triggered alert](../screenshots/DE-002-repeated-failed-logons/10-de-002-triggered-alert.png)
+- [Investigation verdict](../screenshots/DE-002-repeated-failed-logons/11-de-002-investigation-verdict.png)

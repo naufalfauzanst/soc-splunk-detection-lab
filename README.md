@@ -183,6 +183,7 @@ The investigation for DE-001 follows these steps:
 - [x] [Final investigation verdict](screenshots/DE-001-encoded-powershell/08-investigation-verdict.png)
 - [x] [DE-002 search result](screenshots/DE-002-repeated-failed-logons/09-de-002-search-result.png)
 - [x] [DE-002 triggered alert](screenshots/DE-002-repeated-failed-logons/10-de-002-triggered-alert.png)
+- [x] [DE-002 investigation verdict](screenshots/DE-002-repeated-failed-logons/11-de-002-investigation-verdict.png)
 
 ## Skills demonstrated
 
