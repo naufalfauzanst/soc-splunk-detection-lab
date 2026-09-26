@@ -1,0 +1,52 @@
+[default]
+host = SOC-ENDPOINT-01
+
+[WinEventLog://Security]
+disabled = 0
+start_from = newest
+current_only = 0
+checkpointInterval = 5
+renderXml = true
+index = windows_endpoint
+
+[WinEventLog://System]
+disabled = 0
+start_from = newest
+current_only = 0
+checkpointInterval = 5
+renderXml = true
+index = windows_endpoint
+
+[WinEventLog://Application]
+disabled = 0
+start_from = newest
+current_only = 0
+checkpointInterval = 5
+renderXml = true
+index = windows_endpoint
+
+[WinEventLog://Microsoft-Windows-PowerShell/Operational]
+disabled = 0
+start_from = newest
+current_only = 0
+checkpointInterval = 5
+renderXml = true
+index = windows_endpoint
+
+[WinEventLog://Microsoft-Windows-Windows Defender/Operational]
+disabled = 0
+start_from = newest
+current_only = 0
+checkpointInterval = 5
+renderXml = true
+index = windows_endpoint
+
+[WinEventLog://Microsoft-Windows-Sysmon/Operational]
+disabled = 0
+start_from = newest
+current_only = 0
+checkpointInterval = 5
+renderXml = true
+index = windows_endpoint
+source = XmlWinEventLog:Microsoft-Windows-Sysmon/Operational
+sourcetype = XmlWinEventLog

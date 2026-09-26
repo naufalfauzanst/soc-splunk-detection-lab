@@ -1,0 +1,7 @@
+[tcpout]
+defaultGroup = primary_indexers
+
+[tcpout:primary_indexers]
+server = 10.0.2.2:9997
+
+[tcpout-server://10.0.2.2:9997]

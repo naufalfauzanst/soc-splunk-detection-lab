@@ -223,6 +223,14 @@ soc-splunk-detection-lab/
 └── screenshots/
 ```
 
+## Project files
+
+- [Architecture and network flow](architecture/README.md)
+- [Sanitized Splunk configuration examples](configs/README.md)
+- [DE-001 detection documentation](detections/DE-001-encoded-powershell.md)
+- [IR-001 investigation report](investigations/IR-001-encoded-powershell.md)
+- [Screenshot naming and sanitization guide](screenshots/README.md)
+
 ## Disclaimer
 
 This repository documents a personal training environment. Validation commands are designed for an isolated lab. Do not run untrusted commands or expose sensitive event data, credentials, public IP addresses, or personal information in screenshots.
