@@ -62,6 +62,7 @@ The first broad search also identified Microsoft Edge AutoLaunch values. These w
 
 - [Detection result](../screenshots/DE-006-registry-run-key-persistence/22-de-006-search-result.png)
 - [Triggered alert](../screenshots/DE-006-registry-run-key-persistence/23-de-006-triggered-alert.png)
+- [Investigation verdict](../screenshots/DE-006-registry-run-key-persistence/24-de-006-investigation-verdict.png)
 
 ## Analyst conclusion
 

@@ -202,6 +202,7 @@ The investigation for DE-001 follows these steps:
 - [x] [DE-005 investigation verdict](screenshots/DE-005-scheduled-task-creation/21-de-005-investigation-verdict.png)
 - [x] [DE-006 search result](screenshots/DE-006-registry-run-key-persistence/22-de-006-search-result.png)
 - [x] [DE-006 triggered alert](screenshots/DE-006-registry-run-key-persistence/23-de-006-triggered-alert.png)
+- [x] [DE-006 investigation verdict](screenshots/DE-006-registry-run-key-persistence/24-de-006-investigation-verdict.png)
 
 ## Skills demonstrated
 
