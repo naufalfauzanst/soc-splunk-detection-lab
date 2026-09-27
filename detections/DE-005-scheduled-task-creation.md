@@ -99,3 +99,4 @@ The endpoint was not logged out or restarted, so the action did not run. The tas
 
 - [Detection search result](../screenshots/DE-005-scheduled-task-creation/19-de-005-search-result.png)
 - [Triggered alert](../screenshots/DE-005-scheduled-task-creation/20-de-005-triggered-alert.png)
+- [Investigation verdict](../screenshots/DE-005-scheduled-task-creation/21-de-005-investigation-verdict.png)

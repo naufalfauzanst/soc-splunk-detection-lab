@@ -64,6 +64,7 @@ The initial saved search used an all-time range and returned an older validation
 
 - [Detection result](../screenshots/DE-005-scheduled-task-creation/19-de-005-search-result.png)
 - [Triggered alert](../screenshots/DE-005-scheduled-task-creation/20-de-005-triggered-alert.png)
+- [Investigation verdict](../screenshots/DE-005-scheduled-task-creation/21-de-005-investigation-verdict.png)
 
 ## Analyst conclusion
 

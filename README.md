@@ -197,6 +197,7 @@ The investigation for DE-001 follows these steps:
 - [x] [DE-004 investigation verdict](screenshots/DE-004-new-local-user-account/18-de-004-investigation-verdict.png)
 - [x] [DE-005 search result](screenshots/DE-005-scheduled-task-creation/19-de-005-search-result.png)
 - [x] [DE-005 triggered alert](screenshots/DE-005-scheduled-task-creation/20-de-005-triggered-alert.png)
+- [x] [DE-005 investigation verdict](screenshots/DE-005-scheduled-task-creation/21-de-005-investigation-verdict.png)
 
 ## Skills demonstrated
 
