@@ -2,7 +2,7 @@
 
 Home SOC lab for collecting Windows telemetry, writing Splunk detections, validating alerts, and documenting investigation results.
 
-> **Project status:** In progress. The core log pipeline and five detections are working.
+> **Project status:** In progress. The core log pipeline and six detections are working.
 
 ## Project overview
 
@@ -16,6 +16,7 @@ Current capabilities:
 - Detect encoded PowerShell execution.
 - Detect repeated failed Windows logons, suspicious BITSAdmin transfers, and local account creation.
 - Detect suspicious scheduled-task creation used for execution or persistence.
+- Detect and tune suspicious Windows Registry Run-key persistence.
 - Correlate Sysmon process creation, PowerShell Script Block Logging, and Windows Security events.
 - Create scheduled alerts and document investigation findings.
 
@@ -95,6 +96,7 @@ Do not publish passwords, tokens, license data, or other secrets from local conf
 | DE-003 | Suspicious BITSAdmin Network Transfer | T1197 | Medium | Implemented and validated |
 | DE-004 | New Local User Account Created | T1136.001 | Medium | Implemented and validated |
 | DE-005 | Suspicious Scheduled Task Creation | T1053.005 | High | Implemented and validated |
+| DE-006 | Registry Run Key Persistence | T1547.001 | High | Implemented, tuned, and validated |
 
 ## DE-001: Encoded PowerShell Execution
 
@@ -198,6 +200,8 @@ The investigation for DE-001 follows these steps:
 - [x] [DE-005 search result](screenshots/DE-005-scheduled-task-creation/19-de-005-search-result.png)
 - [x] [DE-005 triggered alert](screenshots/DE-005-scheduled-task-creation/20-de-005-triggered-alert.png)
 - [x] [DE-005 investigation verdict](screenshots/DE-005-scheduled-task-creation/21-de-005-investigation-verdict.png)
+- [x] [DE-006 search result](screenshots/DE-006-registry-run-key-persistence/22-de-006-search-result.png)
+- [x] [DE-006 triggered alert](screenshots/DE-006-registry-run-key-persistence/23-de-006-triggered-alert.png)
 
 ## Skills demonstrated
 
@@ -225,6 +229,7 @@ The investigation for DE-001 follows these steps:
 - [x] Add a suspicious LOLBin detection.
 - [x] Add a local account creation detection.
 - [x] Add a scheduled-task persistence detection.
+- [x] Add and tune a Registry Run-key persistence detection.
 - [ ] Add alert tuning notes and known false positives.
 - [ ] Add response recommendations for every detection.
 
@@ -243,7 +248,8 @@ soc-splunk-detection-lab/
     ├── DE-002-repeated-failed-logons/
     ├── DE-003-bitsadmin-network-transfer/
     ├── DE-004-new-local-user-account/
-    └── DE-005-scheduled-task-creation/
+    ├── DE-005-scheduled-task-creation/
+    └── DE-006-registry-run-key-persistence/
 ```
 
 ## Project files
@@ -260,6 +266,8 @@ soc-splunk-detection-lab/
 - [IR-004 investigation report](investigations/IR-004-new-local-user-account.md)
 - [DE-005 detection documentation](detections/DE-005-scheduled-task-creation.md)
 - [IR-005 investigation report](investigations/IR-005-scheduled-task-creation.md)
+- [DE-006 detection documentation](detections/DE-006-registry-run-key-persistence.md)
+- [IR-006 investigation report](investigations/IR-006-registry-run-key-persistence.md)
 - [Screenshot naming and sanitization guide](screenshots/README.md)
 
 ## Disclaimer

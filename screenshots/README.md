@@ -29,10 +29,13 @@ screenshots/
     ├── 16-de-004-search-result.png
     ├── 17-de-004-triggered-alert.png
     └── 18-de-004-investigation-verdict.png
-└── DE-005-scheduled-task-creation/
+├── DE-005-scheduled-task-creation/
     ├── 19-de-005-search-result.png
     ├── 20-de-005-triggered-alert.png
     └── 21-de-005-investigation-verdict.png
+└── DE-006-registry-run-key-persistence/
+    ├── 22-de-006-search-result.png
+    └── 23-de-006-triggered-alert.png
 ```
 
 Each screenshot should show enough context to support a claim in the README. Crop unrelated browser tabs and desktop content.
@@ -75,3 +78,8 @@ Each screenshot should show enough context to support a claim in the README. Cro
 - [Detection search result](DE-005-scheduled-task-creation/19-de-005-search-result.png)
 - [Triggered alert](DE-005-scheduled-task-creation/20-de-005-triggered-alert.png)
 - [Investigation verdict](DE-005-scheduled-task-creation/21-de-005-investigation-verdict.png)
+
+## DE-006 evidence
+
+- [Detection search result](DE-006-registry-run-key-persistence/22-de-006-search-result.png)
+- [Triggered alert](DE-006-registry-run-key-persistence/23-de-006-triggered-alert.png)
