@@ -25,10 +25,13 @@ screenshots/
     ├── 13-de-003-triggered-alert.png
     ├── 14-de-003-downloaded-file-hash.png
     └── 15-de-003-investigation-verdict.png
-└── DE-004-new-local-user-account/
+├── DE-004-new-local-user-account/
     ├── 16-de-004-search-result.png
     ├── 17-de-004-triggered-alert.png
     └── 18-de-004-investigation-verdict.png
+└── DE-005-scheduled-task-creation/
+    ├── 19-de-005-search-result.png
+    └── 20-de-005-triggered-alert.png
 ```
 
 Each screenshot should show enough context to support a claim in the README. Crop unrelated browser tabs and desktop content.
@@ -65,3 +68,8 @@ Each screenshot should show enough context to support a claim in the README. Cro
 - [Detection search result](DE-004-new-local-user-account/16-de-004-search-result.png)
 - [Triggered alert](DE-004-new-local-user-account/17-de-004-triggered-alert.png)
 - [Investigation verdict](DE-004-new-local-user-account/18-de-004-investigation-verdict.png)
+
+## DE-005 evidence
+
+- [Detection search result](DE-005-scheduled-task-creation/19-de-005-search-result.png)
+- [Triggered alert](DE-005-scheduled-task-creation/20-de-005-triggered-alert.png)
