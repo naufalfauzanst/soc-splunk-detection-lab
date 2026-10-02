@@ -1,0 +1,5 @@
+# Local Gmail collector credentials, runtime state, and dependencies
+integrations/gmail/.venv/
+integrations/gmail/private/
+__pycache__/
+*.pyc

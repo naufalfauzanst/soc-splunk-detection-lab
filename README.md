@@ -2,7 +2,7 @@
 
 Home SOC lab for collecting Windows telemetry, writing Splunk detections, validating alerts, and documenting investigation results.
 
-> **Project status:** In progress. The core log pipeline and six detections are working.
+> **Project status:** In progress. The core log pipeline and seven detections are working, including a live Gmail-to-Splunk email pipeline.
 
 ## Project overview
 
@@ -97,6 +97,12 @@ Do not publish passwords, tokens, license data, or other secrets from local conf
 | DE-004 | New Local User Account Created | T1136.001 | Medium | Implemented and validated |
 | DE-005 | Suspicious Scheduled Task Creation | T1053.005 | High | Implemented and validated |
 | DE-006 | Registry Run Key Persistence | T1547.001 | High | Implemented, tuned, and validated |
+
+| [DE-007](detections/DE-007-email-attachment-double-extension.md) | Suspicious Email Attachment Double Extension | T1566.001 (context) | Medium | Implemented and validated |
+
+## Live Gmail integration
+
+Lab-tagged Gmail messages are read by a host-side Python collector and sent to HTTPS HEC in the email_security index. DE-007 detects misleading attachment filename extensions. Live ingestion and a scheduled alert were validated on 2026-10-02. See [collector setup](integrations/gmail/README.md), [DE-007](detections/DE-007-email-attachment-double-extension.md), and [IR-007](investigations/IR-007-email-attachment-double-extension.md). The collector was run manually; continuous polling has not been validated.
 
 ## DE-001: Encoded PowerShell Execution
 
